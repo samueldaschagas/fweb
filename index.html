@@ -5,10 +5,14 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <title>Falibras Web (UFAL)</title>
     <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 
-    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+   <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script src="lib/jquery.tablesorter.js"></script>
+  <script src="lib/jquery.tablesorter.min.js"></script>
+  <script src="lib/jquery.metadata.js"></script>
   <script type="text/javascript" src='js/testando.js'></script>
 
 </head>
@@ -58,6 +62,67 @@
                        <fieldset title='fildset'>
                           <legend>Dados da palavra</legend>
                           <label>Nome</label><input type="text" id='nome-palavra' title='nome-palavra'><br>
+                          <table id="myTable" class="tablesorter"> 
+                            <thead> 
+                            <tr> 
+                                <th>Gênero</th> 
+                                <th>Pessoa</th> 
+                                <th>Número</th> 
+                                <th>Tempo</th> 
+                            </tr> 
+                            </thead> 
+                            <tbody> 
+                            <tr> 
+                                <td>Masculino</td> 
+                                <td>Primeira</td> 
+                                <td>Singular</td> 
+                                <td>Presente</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Bach</td> 
+                                <td>Frank</td> 
+                                <td>fbach@yahoo.com</td> 
+                                <td>$50.00</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Doe</td> 
+                                <td>Jason</td> 
+                                <td>jdoe@hotmail.com</td> 
+                                <td>$100.00</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Conway</td> 
+                                <td>Timdfsd</td> 
+                                <td>tconsdfway@earthlink.net</td> 
+                                <td>$50.00</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Conway</td> 
+                                <td>Tim</td> 
+                                <td>tconway@earthlink.net</td> 
+                                <td>$50.00</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Conway</td> 
+                                <td>Tim</td> 
+                                <td>tconway@earthlink.net</td> 
+                                <td>$50.00</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Conway</td> 
+                                <td>Timasad</td> 
+                                <td>tconway@earthlink.net</td> 
+                                <td>$50.00</td> 
+                            </tr> 
+                            <tr> 
+                                <td>Conway</td> 
+                                <td>Timasad</td> 
+                                <td>tconway@earthlink.net</td> 
+                                <td>$50.00</td> 
+                            </tr> 
+                            </tbody> 
+                          </table> 
+
                        </fieldset>
                     </form>
 
@@ -94,6 +159,13 @@
                               <option>ITEM n DA LISTA
                           </select>
 
+                          <input type="button" id='form-pesquisar-1' value="Pesquisar" title='form-pesquisar-1' />
+                          <input type="button" id='form-pesquisar-2' value="Pesquisar" title='form-pesquisar-2' />
+                          <input type="button" id='btt-front' value="--->" title='btt-front' />
+                          <input type="button" id='btt-back' value="<---" title='btt-back' />
+
+                          <input id="text-1" title='text-1' font/>
+                          <input id="text-2" title='text-2'/>
 
                        </fieldset>
                     </form>
@@ -124,7 +196,6 @@
     <!-- Fim Cont. Editável -->
 
 
-    
     <!-- Início Rodapé -->
     <div id="rodape"></div>
     <!-- Fim Rodapé -->

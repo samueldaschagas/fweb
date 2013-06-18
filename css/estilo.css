@@ -156,19 +156,19 @@ select{
 	position: absolute;
 	width: 180px;
 	height: 180px;
-	left: 35%;	
+	left: 39%;	
 }
 
 #lbl-significados{
 	position: absolute;
-	left: 70%;
+	left: 68%;
 }
 
 #lista-categorias-3{
 	position: absolute;
 	width: 180px;
 	height: 180px;
-	left: 70%;	
+	left: 68%;	
 }
 
 
@@ -200,3 +200,50 @@ select{
 	left: 24%;
 	top: 35%
 }
+
+/*FORM ASSOCIACAO*/
+
+/*Botões*/
+#btt-front{
+	position: absolute;
+	left: 26%;
+	top: 40%;
+	width: 90px;
+}
+
+#btt-back{
+	position: absolute;
+	left: 26%;
+	top: 52%;
+	width: 90px;
+}
+
+#form-pesquisar-1{
+	position: absolute;
+	left: 26%;
+	top: 85%;
+}
+
+#form-pesquisar-2{
+	position: absolute;
+	left: 87%;
+	top: 85%;
+}
+
+/*Textfields*/
+#text-1{
+	position: absolute;
+	left: 2%;
+	top: 86%;
+	width: 178px;
+}
+
+#text-2{
+	position: absolute;
+	left: 68%;
+	top: 86%;	
+}
+
+
+
+

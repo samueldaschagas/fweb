@@ -19,6 +19,7 @@
       "azul",
       "carro"
     ];
+
     $( "#tags" ).autocomplete({
       source: availableTags
     });
@@ -54,6 +55,13 @@
     });
 
 
+    $("table").tablesorter({
+    // enable debug mode
+      debug: true
+    });
+    
+    $("#myTable").tablesorter();
 
-  });
+
+});
 
