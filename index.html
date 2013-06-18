@@ -2,19 +2,28 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Falibras Web (UFAL)</title>
-    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
-
+   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <title>Falibras Web (UFAL)</title>
+   <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+   <link rel="stylesheet" type="text/css" href="css/style.css" />
    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
-  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-  <script src="lib/jquery.tablesorter.js"></script>
-  <script src="lib/jquery.tablesorter.min.js"></script>
-  <script src="lib/jquery.metadata.js"></script>
-  <script type="text/javascript" src='js/testando.js'></script>
+   <link href="lib/jtable.2.3.0/themes/metro/blue/jtable.min.css" rel="stylesheet" type="text/css" />
 
+
+<!-- tablesorter widgets (optional) -->
+<script type="text/javascript" src="/path/to/jquery.tablesorter.widgets.js"></script>
+   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+   <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+      <script type="text/javascript" src="/path/to/jquery-latest.js"></script> 
+  <script type="text/javascript" src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script> 
+
+  <script type="text/javascript" src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.min.js"></script> 
+   <script type="text/javascript" src='js/testando.js'></script>
+
+
+
+
+ 
 </head>
 <body>
 
@@ -25,6 +34,7 @@
     <div id="topo">
         <a href="index.html" title='Página Inicial'><div id="logo"></div></a>
     </div>
+    <!-- <img src="maozinha.png" style='position:fixed; top:2%; left:30%; height:100px; width:100px;'> -->
     <!-- Início Topo -->
     
     <!-- Início Cont. Editável / TABS-->
@@ -62,10 +72,12 @@
                        <fieldset title='fildset'>
                           <legend>Dados da palavra</legend>
                           <label>Nome</label><input type="text" id='nome-palavra' title='nome-palavra'><br>
-                          <table id="myTable" class="tablesorter"> 
+                          
+
+                        <table id="myTable" class="tablesorter"> 
                             <thead> 
                             <tr> 
-                                <th>Gênero</th> 
+                                <th>Genêro</th> 
                                 <th>Pessoa</th> 
                                 <th>Número</th> 
                                 <th>Tempo</th> 
@@ -73,10 +85,10 @@
                             </thead> 
                             <tbody> 
                             <tr> 
-                                <td>Masculino</td> 
-                                <td>Primeira</td> 
-                                <td>Singular</td> 
-                                <td>Presente</td> 
+                                <td>Smith</td> 
+                                <td>John</td> 
+                                <td>jsmith@gmail.com</td> 
+                                <td>$50.00</td> 
                             </tr> 
                             <tr> 
                                 <td>Bach</td> 
@@ -92,37 +104,31 @@
                             </tr> 
                             <tr> 
                                 <td>Conway</td> 
-                                <td>Timdfsd</td> 
-                                <td>tconsdfway@earthlink.net</td> 
+                                <td>Tim</td> 
+                                <td>tconway@earthlink.net</td> 
                                 <td>$50.00</td> 
                             </tr> 
-                            <tr> 
+                              <tr> 
                                 <td>Conway</td> 
                                 <td>Tim</td> 
                                 <td>tconway@earthlink.net</td> 
                                 <td>$50.00</td> 
                             </tr> 
-                            <tr> 
+                              <tr> 
                                 <td>Conway</td> 
                                 <td>Tim</td> 
                                 <td>tconway@earthlink.net</td> 
                                 <td>$50.00</td> 
                             </tr> 
-                            <tr> 
+                              <tr> 
                                 <td>Conway</td> 
-                                <td>Timasad</td> 
+                                <td>Tim</td> 
                                 <td>tconway@earthlink.net</td> 
-                                <td>$50.00</td> 
-                            </tr> 
-                            <tr> 
-                                <td>Conway</td> 
-                                <td>Timasad</td> 
-                                <td>tconway@earthlink.net</td> 
-                                <td>$50.00</td> 
+                                <td>$50.00</td>  
                             </tr> 
                             </tbody> 
-                          </table> 
-
+                        </table> 
+                    
                        </fieldset>
                     </form>
 

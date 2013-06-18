@@ -4,24 +4,15 @@
     //Adiciona estilo as abas
     $( "#tabs" ).tabs();
 
-    $('#pesquisar').click(function(){
-        //TODO - Adicionar funcionalidade ao botão Pesquisar
-    });
 
-    $('')
-
-    var availableTags = [
-      "casa",
-      "cruz",
-      "menino",
-      "mão",
-      "verde",
-      "azul",
-      "carro"
-    ];
-
+    var tags = [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby", "teste" ];
     $( "#tags" ).autocomplete({
-      source: availableTags
+      source: function( request, response ) {
+              var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );
+              response( $.grep( tags, function( item ){
+                  return matcher.test( item );
+              }) );
+      }
     });
 
     //Tooltips - Link Home
@@ -54,13 +45,17 @@
         
     });
 
-
-    $("table").tablesorter({
-    // enable debug mode
-      debug: true
-    });
-    
-    $("#myTable").tablesorter();
+   $("table").tablesorter({
+    theme: 'blue',
+    // initialize zebra striping of the table
+    widgets: ["zebra"],
+    // change the default striping class names
+    // updated in v2.1 to use widgetOptions.zebra = ["even", "odd"]
+    // widgetZebra: { css: [ "normal-row", "alt-row" ] } still works
+    widgetOptions : {
+      zebra : [ "normal-row", "alt-row" ]
+    }
+  });
 
 
 });
