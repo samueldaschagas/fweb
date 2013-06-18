@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Falibras Web (UFAL)</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
+
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+  <script type="text/javascript" src='js/testando.js'></script>
+
+</head>
+<body>
+
+<div id="container">
+    <div id="linha-topo"></div>
+    
+    <!-- Início Topo -->
+    <div id="topo">
+        <a href="index3.html" title='Página Inicial'><div id="logo"></div></a>
+    </div>
+    <!-- Início Topo -->
+    
+    <!-- Início Cont. Editável / TABS-->
+    <div id="main">
+        <div class="floatstop"></div>
+              <div id="tabs">
+                <ul>
+                  <li><a href="#tabs-1" href='#'>Palavra</a></li>
+                  <li><a href="#tabs-2" href='#'>Categoria</a></li>
+                  <li><a href="#tabs-3" href='#'>Vocabulário</a></li>
+                </ul>
+
+                <!-- TAB PALAVRA -->
+
+                <div align="center" id="tabs-1"> 
+              
+                    <input id="tags" title='tags'/>
+                    <input id ='pesquisar' type="button" value="Pesquisar" title='pesquisar' />
+                    <select id='lista-palavras' size=TAMANHO multiple title='lista-palavras' >
+                          <option>ITEM 1 DA LISTA
+                          <option>ITEM 2 DA LISTA
+                          <option>ITEM 3 DA LISTA
+                          <option>ITEM 4 DA LISTA
+                          <option>ITEM 5 DA LISTA
+                          <option>ITEM 6 DA LISTA
+                          <option>ITEM 7 DA LISTA
+                          <option>ITEM 8 DA LISTA
+                          <option>ITEM n DA LISTA
+                    </select>
+                    <input type="button" id='alterar' value="Alterar" class='btt-lista' title='alterar' />
+                    <input type="button" id='excluir' value="Excluir" class='btt-lista' title='excluir' />
+                    <input type="button" id='adicionar' value="Adicionar" class='btt-lista' title='adicionar' />
+                    
+                    <form>
+                       <fieldset title='fildset'>
+                          <legend>Dados da palavra</legend>
+                          <label>Nome</label><input type="text" id='nome-palavra' title='nome-palavra'><br>
+                       </fieldset>
+                    </form>
+
+                     <form>
+                       <fieldset id='associacao' title='associacao'>
+                          <legend>Associação de categorias e significados</legend> 
+
+                          <label id='lbl-categorias'>Categorias</label> 
+                          <select id='lista-categorias-1' size=TAMANHO multiple title='lista-categorias-1' >
+                              <option>ITEM 1 DA LISTA
+                              <option>ITEM 2 DA LISTA
+                              <option>ITEM 3 DA LISTA
+                              <option>ITEM 4 DA LISTA
+                              <option>ITEM 5 DA LISTA
+                              <option>ITEM n DA LISTA
+                          </select>
+
+                           <select id='lista-categorias-2' size=TAMANHO multiple title='lista-categorias-2' >
+                              <option>ITEM 1 DA LISTA
+                              <option>ITEM 2 DA LISTA
+                              <option>ITEM 3 DA LISTA
+                              <option>ITEM 4 DA LISTA
+                              <option>ITEM 5 DA LISTA
+                              <option>ITEM n DA LISTA
+                          </select>
+
+                          <label id='lbl-significados'>Significados</label> 
+                          <select id='lista-categorias-3' size=TAMANHO multiple title='lista-categorias-3' >
+                              <option>ITEM 1 DA LISTA
+                              <option>ITEM 2 DA LISTA
+                              <option>ITEM 3 DA LISTA
+                              <option>ITEM 4 DA LISTA
+                              <option>ITEM 5 DA LISTA
+                              <option>ITEM n DA LISTA
+                          </select>
+
+
+                       </fieldset>
+                    </form>
+
+                    <input type="button" id='add-palavra' value="Adicionar Palavra" title='add-palavra'/>
+                    <input type="button" id='limpar-formulario' value="Limpar Formulário" title='limpar-formulario' />
+
+
+
+                </div>
+
+                <!-- TAB CATEGORIA  -->
+
+                <div id="tabs-2">
+                    <ul id="sortable">
+                      <li class="ui-state-default">Item 1</li>
+                      <li class="ui-state-default">Item 2</li>
+                      <li class="ui-state-default">Item 3</li>
+                      <li class="ui-state-default">Item 4</li>
+                    </ul>
+                </div>
+
+                <div id="tabs-3">
+                  <p>CONTEÚDO 3</p>
+                </div>
+              </div>
+    </div>
+    <!-- Fim Cont. Editável -->
+
+
+    
+    <!-- Início Rodapé -->
+    <div id="rodape"></div>
+    <!-- Fim Rodapé -->
+    <div class="floatstop"></div>
+</div>
+
+  <span id='rodape'>Laboratório de Software Robusto - Universidade Federal de Alagoas</span>
+
+</body>
+</html>
+
