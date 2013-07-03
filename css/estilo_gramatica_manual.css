@@ -1,0 +1,188 @@
+@charset "utf-8";
+/*Gramatica Manual*/
+
+
+#lbl-regras-cadastradas{
+	left: 2%;
+	position:absolute;
+	top:8%;
+	width:140px;
+}
+
+#lista-regras{
+	left: 2%;
+	height: 200px;
+	position: absolute;
+	top: 11%; 
+	width: 400px;
+}
+
+#lbl-nome-regra{
+	left: 49%;
+	position:absolute;
+	top:12.5%;
+}
+
+#nome-regra{
+	left: 62%;
+	position:absolute;
+	top:12%;
+	width:307px;
+}
+
+#lbl-frase-exemplo{
+	left: 49%;
+	position:absolute;
+	top:16.5%;
+}
+
+#frase-exemplo{
+	left: 63.5%;
+	position: absolute;
+	top: 16%;
+	width: 293px;
+}
+
+#tipos-frase{
+  	left: 49%;
+  	height: 30px;
+  	padding: 10px; /*Espaçamento entre os campos e a borda*/
+ 	position: absolute;
+  	top:22%;
+  	width: 402px;
+}
+
+#checkbox-tipo-frase{
+	margin-left: 50px;
+}
+
+#nova-regra{
+	left: 49%;
+	height: 30px;
+	position: absolute;
+	top: 32%;	
+}
+
+#excluir-regra{
+	left: 62%;
+	height: 30px;
+	position: absolute;
+	top: 32%;
+}
+
+#lbl-filtro{
+	left: 2%;
+	position: absolute;
+	top: 39.5%;
+}
+
+#filtro{
+	left: 6%;
+	position: absolute;
+	top: 39%;
+}
+
+#form-filtro-regra{
+	left: 25%;
+	position: absolute;
+	top: 39.5%;
+}
+
+#detalhe-regra{
+	left: 2%;
+  	height: 41%;
+  	padding: 10px; /*Espaçamento entre os campos e a borda*/
+ 	position: absolute;
+  	top:45%;
+  	width: 90%;
+}
+
+#lbl-regras-categoria{
+	left: 2%;
+	position:absolute;
+	top:5%;
+}
+
+#lista-regra-categoria{
+	left: 2%;
+	height: 75%;
+	position: absolute;
+	top: 12%; 
+	width: 32%;
+}
+
+#lbl-filtro-field{
+	left: 2%;
+	position: absolute;
+	top: 91%;
+}
+
+#filtro-field{
+	left: 7%;
+	position: absolute;
+	top: 90%;
+	width: 23%;
+}
+
+#btt-front-regra{
+	left: 35%;
+	height: 12%;
+	position: absolute;
+	top: 35%;
+	width: 12%;
+}
+
+#btt-back-regra{
+	left: 35%;
+	height: 12%;
+	position: absolute;
+	top: 50%;
+	width: 12%;
+}
+
+#lbl-sequencia-cateforia{
+	left: 52%;
+	position: absolute;
+	top: 5%; 
+}
+
+
+#lista-sequencia-categoria{
+	left: 48%;
+	height: 75%;
+	position: absolute;
+	top: 12%; 
+	width: 32%;
+}
+
+#btt-cima-regra-gramatica{
+	left: 81.5%;
+	height: 12%;
+	position: absolute;
+	top: 35%;
+	width: 15%;
+}
+
+#btt-baixo-regra-gramatica{
+	left: 81.5%;
+	height: 12%;
+	position: absolute;
+	top: 50%;
+	width: 15%;
+}
+
+#btt-limpar-campo-regra{
+	left: 2%;
+	height: 5%;
+	position:absolute;
+	top: 92%;
+	width: 14%;
+}
+
+#btt-add-regra-gramatica{
+	left: 17%;
+	height: 5%;
+	position:absolute;
+	top: 92%;
+	width: 14%;
+}

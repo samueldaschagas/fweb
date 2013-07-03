@@ -3,81 +3,66 @@
 <head>
     
    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-   <title>Falibras Web (UFAL)</title>
+   <title>Falibras Web</title>
+
+   <!-- CSS -->
    <link rel="stylesheet" type="text/css" href="css/estilo.css" />
    <link rel="stylesheet" type="text/css" href="css/style.css" />
    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.3/themes/smoothness/jquery-ui.css" />
-   <link href="lib/jtable.2.3.0/themes/metro/blue/jtable.min.css" rel="stylesheet" type="text/css" />
+   <link rel="stylesheet" type="text/css" href="css/estilo_palavra.css" />
+   <link rel="stylesheet" type="text/css" href="css/estilo_categoria.css" />
+   <link rel="stylesheet" type="text/css" href="css/estilo_gramatica_manual.css" />
 
-
-<!-- tablesorter widgets (optional) -->
-<script type="text/javascript" src="/path/to/jquery.tablesorter.widgets.js"></script>
-   <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+   <!-- JAVASCRIPT LIBRARIES -->
+   <script src="lib/jquery-1.10.1.js"></script>
    <script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-      <script type="text/javascript" src="/path/to/jquery-latest.js"></script> 
-  <script type="text/javascript" src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script> 
-
-  <script type="text/javascript" src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.min.js"></script> 
-   <script type="text/javascript" src='js/testando.js'></script>
-
-
-
-
- 
+   <script src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.js"></script> 
+   <script src="http://mottie.github.io/tablesorter/js/jquery.tablesorter.min.js"></script> 
+   
 </head>
 <body>
 
 <div id="container">
-    <div id="linha-topo"></div>
-    
+   
     <!-- Início Topo -->
     <div id="topo">
-        <a href="index.html" title='Página Inicial'><div id="logo"></div></a>
+        <a  href="index.html" title='Página Inicial'><div id="logo"></div></a>
     </div>
-    <!-- <img src="maozinha.png" style='position:fixed; top:2%; left:30%; height:100px; width:100px;'> -->
-    <!-- Início Topo -->
+    <!-- Fim Topo -->
     
-    <!-- Início Cont. Editável / TABS-->
+    <!-- TABS -->
     <div id="main">
         <div class="floatstop"></div>
+              <div title="Mensagem de erro" id="dialog-message"></div>
+
               <div id="tabs">
                 <ul>
-                  <li><a href="#tabs-1" href='#'>Palavra</a></li>
+                  <li><a href="#tabs-1" href='#'>Vocabulário</a></li>
                   <li><a href="#tabs-2" href='#'>Categoria</a></li>
-                  <li><a href="#tabs-3" href='#'>Vocabulário</a></li>
+                  <li><a href="#tabs-4" href='#'>Gramática Manual</a></li>
                 </ul>
 
-                <!-- TAB PALAVRA -->
-
-                <div align="center" id="tabs-1"> 
+                <!-- TAB VOCABULARIO -->
+                <div id="tabs-1"> 
               
-                    <input id="tags" title='tags'/>
+                    <input id="text-palavra" type="text" title='text-palavra' />
                     <input id ='pesquisar' type="button" value="Pesquisar" title='pesquisar' />
-                    <select id='lista-palavras' size=TAMANHO multiple title='lista-palavras' >
-                          <option>ITEM 1 DA LISTA
-                          <option>ITEM 2 DA LISTA
-                          <option>ITEM 3 DA LISTA
-                          <option>ITEM 4 DA LISTA
-                          <option>ITEM 5 DA LISTA
-                          <option>ITEM 6 DA LISTA
-                          <option>ITEM 7 DA LISTA
-                          <option>ITEM 8 DA LISTA
-                          <option>ITEM n DA LISTA
-                    </select>
-                    <input type="button" id='alterar' value="Alterar" class='btt-lista' title='alterar' />
-                    <input type="button" id='excluir' value="Excluir" class='btt-lista' title='excluir' />
-                    <input type="button" id='adicionar' value="Adicionar" class='btt-lista' title='adicionar' />
+
+                    <select id='lista-palavras' size=10 title='lista-palavras' ></select>
+                    <input type="button" id='alterar' value="Alterar" title='alterar' />
+                    <input type="button" id='excluir' value="Excluir" title='excluir' />
+                    <input type="button" id='adicionar' value="Adicionar" title='adicionar' />
                     
                     <form>
                        <fieldset title='fildset'>
                           <legend>Dados da palavra</legend>
-                          <label>Nome</label><input type="text" id='nome-palavra' title='nome-palavra'><br>
+                          <label>Nome</label>
+                          <input type="text" id='nome-palavra' title='nome-palavra'><br>
                           
-
-                        <table id="myTable" class="tablesorter"> 
+                          <table id="myTable" class="tablesorter"> 
                             <thead> 
                             <tr> 
-                                <th>Genêro</th> 
+                                <th>Gênero</th> 
                                 <th>Pessoa</th> 
                                 <th>Número</th> 
                                 <th>Tempo</th> 
@@ -85,50 +70,25 @@
                             </thead> 
                             <tbody> 
                             <tr> 
-                                <td>Smith</td> 
-                                <td>John</td> 
-                                <td>jsmith@gmail.com</td> 
-                                <td>$50.00</td> 
+                                <td>Masculino</td> 
+                                <td>Primeira</td> 
+                                <td>Singular</td> 
+                                <td>Presente</td> 
                             </tr> 
                             <tr> 
-                                <td>Bach</td> 
-                                <td>Frank</td> 
-                                <td>fbach@yahoo.com</td> 
-                                <td>$50.00</td> 
+                                <td>Feminino</td> 
+                                <td>Segunda</td> 
+                                <td>Plural</td> 
+                                <td>Passado</td> 
                             </tr> 
                             <tr> 
-                                <td>Doe</td> 
-                                <td>Jason</td> 
-                                <td>jdoe@hotmail.com</td> 
-                                <td>$100.00</td> 
-                            </tr> 
-                            <tr> 
-                                <td>Conway</td> 
-                                <td>Tim</td> 
-                                <td>tconway@earthlink.net</td> 
-                                <td>$50.00</td> 
-                            </tr> 
-                              <tr> 
-                                <td>Conway</td> 
-                                <td>Tim</td> 
-                                <td>tconway@earthlink.net</td> 
-                                <td>$50.00</td> 
-                            </tr> 
-                              <tr> 
-                                <td>Conway</td> 
-                                <td>Tim</td> 
-                                <td>tconway@earthlink.net</td> 
-                                <td>$50.00</td> 
-                            </tr> 
-                              <tr> 
-                                <td>Conway</td> 
-                                <td>Tim</td> 
-                                <td>tconway@earthlink.net</td> 
-                                <td>$50.00</td>  
-                            </tr> 
+                                <td></td> 
+                                <td>Terceira</td> 
+                                <td></td> 
+                                <td>Futuro</td> 
+                            </tr>                               
                             </tbody> 
-                        </table> 
-                    
+                        </table>
                        </fieldset>
                     </form>
 
@@ -137,78 +97,150 @@
                           <legend>Associação de categorias e significados</legend> 
 
                           <label id='lbl-categorias'>Categorias</label> 
-                          <select id='lista-categorias-1' size=TAMANHO multiple title='lista-categorias-1' >
-                              <option>ITEM 1 DA LISTA
-                              <option>ITEM 2 DA LISTA
-                              <option>ITEM 3 DA LISTA
-                              <option>ITEM 4 DA LISTA
-                              <option>ITEM 5 DA LISTA
-                              <option>ITEM n DA LISTA
-                          </select>
-
-                           <select id='lista-categorias-2' size=TAMANHO multiple title='lista-categorias-2' >
-                              <option>ITEM 1 DA LISTA
-                              <option>ITEM 2 DA LISTA
-                              <option>ITEM 3 DA LISTA
-                              <option>ITEM 4 DA LISTA
-                              <option>ITEM 5 DA LISTA
-                              <option>ITEM n DA LISTA
-                          </select>
+                          <select id='lista-categorias-1' size=10 title='lista-categorias-1' ></select>
+                          <select id='lista-categorias-2' size=10 title='lista-categorias-2' ></select>
 
                           <label id='lbl-significados'>Significados</label> 
-                          <select id='lista-categorias-3' size=TAMANHO multiple title='lista-categorias-3' >
-                              <option>ITEM 1 DA LISTA
-                              <option>ITEM 2 DA LISTA
-                              <option>ITEM 3 DA LISTA
-                              <option>ITEM 4 DA LISTA
-                              <option>ITEM 5 DA LISTA
-                              <option>ITEM n DA LISTA
-                          </select>
+                          <select id='lista-categorias-3' size=10 title='lista-categorias-3' ></select>
 
                           <input type="button" id='form-pesquisar-1' value="Pesquisar" title='form-pesquisar-1' />
                           <input type="button" id='form-pesquisar-2' value="Pesquisar" title='form-pesquisar-2' />
-                          <input type="button" id='btt-front' value="--->" title='btt-front' />
-                          <input type="button" id='btt-back' value="<---" title='btt-back' />
+                          <input type="button" id='btt-front' value="---->" title='btt-front' />
+                          <input type="button" id='btt-back' value="<----" title='btt-back' />
 
-                          <input id="text-1" title='text-1' font/>
-                          <input id="text-2" title='text-2'/>
-
+                          <input type="text" id="text-1" title='text-1'/>
+                          <input type="text" id="text-2" title='text-2'/>
                        </fieldset>
                     </form>
 
                     <input type="button" id='add-palavra' value="Adicionar Palavra" title='add-palavra'/>
                     <input type="button" id='limpar-formulario' value="Limpar Formulário" title='limpar-formulario' />
 
-
-
                 </div>
 
                 <!-- TAB CATEGORIA  -->
 
                 <div id="tabs-2">
-                    <ul id="sortable">
-                      <li class="ui-state-default">Item 1</li>
-                      <li class="ui-state-default">Item 2</li>
-                      <li class="ui-state-default">Item 3</li>
-                      <li class="ui-state-default">Item 4</li>
-                    </ul>
+                    
+                   <input type="button" id='nova-categoria' value="Nova Categoria" title='nova-categoria'/>
+                   <input type="button" id='excluir-categoria' value="Excluir Categoria" title='excluir-categoria'/>
+
+                   <input type="button" id='limpar-form' value="Limpar Formulário" title='limpar-form'/>
+                   <input type="button" id='add-categoria' value="Adicionar Categoria" title='add-categoria'/>
+                   <input type="button" id='pesquisa-categoria' value="Pesquisar" title='pesquisa-categoria'/>
+                   <input id="text-filtro" title='text-filtro' class='campo'/>
+
+                   
+                   <label id='lbl-nome-categoria'>Nome</label>
+                   <input type="text" id="nome-categoria" title='nome-categoria'/>
+                
+                   <label id='lbl-categorias-cadastradas'>Categorias cadastradas</label>
+
+                   <select id="lista-categorias" size=10 title='lista-categorias' ></select>
                 </div>
 
-                <div id="tabs-3">
-                  <p>CONTEÚDO 3</p>
+                <!-- TAB GRAMÁTICA MANUAL -->
+
+                <div id="tabs-4">
+
+                  <label id='lbl-nome-regra'>Nome da Regra: </label>
+                  <input id="nome-regra" title='nome-regra' font/>
+
+                  <label id='lbl-frase-exemplo'>Frase de Exemplo: </label>
+                  <input id="frase-exemplo" title='frase-exemplo' font/>
+
+                  <label id='lbl-regras-cadastradas'>Regras Cadastradas</label>
+                  <select id="lista-regras" size=TAMANHO multiple title='lista-regras' >
+                    <option>ITEM 1 DA LISTA</option>
+                    <option>ITEM 2 DA LISTA</option>
+                    <option>ITEM 3 DA LISTA</option>
+                    <option>ITEM 4 DA LISTA</option>
+                    <option>ITEM 5 DA LISTA</option>
+                    <option>ITEM n DA LISTA</option>
+                  </select>
+
+                  <form>
+                    <fieldset id='tipos-frase' title='tipos-frase'>
+                      <legend>Tipo de frase onde a regra se aplica:</legend> 
+                      
+                      <input type="checkbox" name="tipo-frase" value="Afirmativa"/> Afirmativa
+                      <input id='checkbox-tipo-frase' type="checkbox" name="tipo-frase" value="Interrogativa"/> Interrogativa 
+                      <input id='checkbox-tipo-frase' type="checkbox" name="tipo-frase" value="Exclamativa"/> Exclamativa
+                    </fieldset>
+                  </form>
+
+                  <input type="button" id='nova-regra' value="Nova Regra" title='nova-regra'/>
+                  <input type="button" id='excluir-regra' value="Excluir Regra" title='excluir-regra'/>
+
+                  <label id='lbl-filtro'>Filtro: </label>
+                  <input id="filtro" title='frase-exemplo' font/>
+
+                  <form id='form-filtro-regra'>
+                    <input type="radio" name="filtro-regra" value="nome" >Nome &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="filtro-regra" value="frase exemplo">Frase Exemplo 
+                  </form> 
+
+                  <form>
+                    <fieldset id='detalhe-regra' title='detalhe-regra'>
+                      <legend>Detalhes da Regra:</legend> 
+
+                      <label id='lbl-regras-categoria'>Categorias Cadastradas</label>
+
+                      <select id="lista-regra-categoria" size=TAMANHO multiple title='lista-regras-categorias' >
+                        <option>ITEM 1 DA LISTA</option>
+                        <option>ITEM 2 DA LISTA</option>
+                        <option>ITEM 3 DA LISTA</option>
+                        <option>ITEM 4 DA LISTA</option>
+                        <option>ITEM 5 DA LISTA</option>
+                        <option>ITEM n DA LISTA</option>
+                      </select>
+                      
+                      <label id='lbl-filtro-field'>Filtro </label>
+                      <input id="filtro-field" title='filtro-categoria' font/>
+
+                      <input type="button" id='btt-front-regra' value="--->" title='btt-front' />
+                      <input type="button" id='btt-back-regra' value="<---" title='btt-back' />
+
+                      <label id='lbl-sequencia-cateforia'>Sequência de Categoria da Frase:</label>
+
+                      <select id="lista-sequencia-categoria" size=TAMANHO multiple title='lista-sequencia-categoria' >
+                        <option>ITEM 1 DA LISTA</option>
+                        <option>ITEM 2 DA LISTA</option>
+                        <option>ITEM 3 DA LISTA</option>
+                        <option>ITEM 4 DA LISTA</option>
+                        <option>ITEM 5 DA LISTA</option>
+                        <option>ITEM n DA LISTA</option>
+                      </select>
+
+                      <input type="button" id='btt-cima-regra-gramatica' value="Para Cima" title='btt-cima-regra-gramatica' />
+                      <input type="button" id='btt-baixo-regra-gramatica' value="Para Baixo" title='btt-baixo-regra-gramatica' />
+
+                    </fieldset>
+                  </form>
+
+                  <input type="button" id='btt-limpar-campo-regra' value="Limpar Campos" title='btt-front' />
+                  <input type="button" id='btt-add-regra-gramatica' value="Adicionar Regra" title='btt-back' />
+
                 </div>
-              </div>
+
+          </div>
     </div>
-    <!-- Fim Cont. Editável -->
+    <!-- FIM TABS -->
 
+    <div class="floatstop"></div>
 
     <!-- Início Rodapé -->
-    <div id="rodape"></div>
+    <div id="rodape">Laboratório de Software Robusto - Universidade Federal de Alagoas</div>
     <!-- Fim Rodapé -->
-    <div class="floatstop"></div>
+    
 </div>
-
-  <span id='rodape'>Laboratório de Software Robusto - Universidade Federal de Alagoas</span>
+<!-- Fim container -->
+   
+   <!-- JAVASCRIPT FEATURES -->
+   <script type="text/javascript" src='js/func_main.js'></script>
+   <script type="text/javascript" src='js/func_tabela.js'></script>
+   <script type="text/javascript" src='js/func_palavra.js'></script>
+   <script type="text/javascript" src='js/func_categoria.js'></script>
 
 </body>
 </html>

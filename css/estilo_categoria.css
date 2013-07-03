@@ -1,0 +1,65 @@
+@charset "utf-8";
+/*Categoria*/
+
+#lista-categorias{
+	position: absolute;
+	top: 15%; 
+	left: 2%;
+	width: 300px;
+	height: 500px;
+}
+
+#lbl-categorias-cadastradas{
+	position:absolute;
+	width:200px;
+	top:12%;
+	left: 2%;
+}
+
+#lbl-nome-categoria{
+	position:absolute;
+	top:38%;
+	left: 38%;
+}
+
+#nome-categoria{
+	position:absolute;
+	width:140px;
+	top:40%;
+	left: 38%;
+}
+
+#text-filtro{
+	position:absolute;
+	top:85%;
+	left:2%;
+}
+#pesquisa-categoria{
+	position:absolute;
+	top:85%;
+	left:22%;
+}
+
+#nova-categoria{
+	position:absolute;
+	top:25%;
+	left:38%;
+}
+
+#excluir-categoria{
+	position:absolute;
+	top:30%;
+	left:38%;
+}
+
+#limpar-form{
+	position:absolute;
+	top:45%;
+	left:38%;
+}
+
+#add-categoria{
+	position:absolute;
+	top:50%;
+	left:38%;
+}

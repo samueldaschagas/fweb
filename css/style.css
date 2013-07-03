@@ -6,20 +6,19 @@ table{
 
 table.tablesorter {
 	font-family:arial;
-	background-color: #CDCDCD;
-	margin:10px 0pt 15px;
-	
-	width: 100%;
+	top: 20%;
+	width: 480px;
+	height: 210px;
 	text-align: left;
 }
 table.tablesorter thead tr th, table.tablesorter tfoot tr th {
 	background-color: #e6EEEE;
 	border: 1px solid #FFF;
-
 	padding: 4px;
 }
+
 table.tablesorter thead tr .header {
-	background-image: url(bg.gif);
+	background-image: url(../img/bg.gif);
 	background-repeat: no-repeat;
 	background-position: center right;
 	cursor: pointer;

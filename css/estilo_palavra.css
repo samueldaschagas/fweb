@@ -1,0 +1,182 @@
+@charset "utf-8";
+/*Palavra*/
+
+#text-palavra{
+	position: absolute;
+	top: 10%;
+	left: 2%;
+	width: 180px;	
+	border: 1px solid #699; 
+	
+}
+
+#sortable { 
+ 	position:absolute;
+ 	list-style-type: none; margin: 0; 
+ 	padding: 0; 
+ 	width: 60%; 
+ 	top: 20%;
+}
+
+#sortable li {  margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; ; }
+html>body #sortable li { height: 1.5em; line-height: 1.2em; }
+.ui-state-highlight { height: 1.5em; line-height: 1.2em; }
+
+
+#add-palavra{
+  	position:absolute;
+	top: 92%;
+	left: 18%;
+	margin: 0px; 
+	padding: 5px; /*Altera tamanho do botão*/
+	
+}
+
+#limpar-formulario{
+  	position:absolute;
+	top: 92%;
+	left:22px;
+	margin: 0px; 
+	padding: 5px; /*Altera tamanho do botão*/
+}
+
+fieldset{
+ 	position: absolute;
+  	width: 480px;
+  	height: 260px;
+  	left: 40%;
+  	padding: 10px; /*Espaçamento entre os campos e a borda*/
+}
+
+#pesquisar{
+	position: absolute;
+	top: 10%;
+	left: 25%;
+}
+
+select{
+	position: absolute;
+	width: 180px;
+	height: 210px;
+  	left: 2%;
+  	top: 17%;
+  	padding: 10px; 
+}
+
+#nome-palavra{
+	position: absolute;
+	top: 7%;
+	left: 10%;
+	width: 180px;	
+}
+
+#lbl-categorias{
+	position: absolute;
+	left: 2%;
+}
+
+#lista-categorias-1{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+}
+
+#lista-categorias-2{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	left: 39%;	
+}
+
+#lbl-significados{
+	position: absolute;
+	left: 68%;
+}
+
+#lista-categorias-3{
+	position: absolute;
+	width: 180px;
+	height: 180px;
+	left: 68%;	
+}
+
+
+#associacao{
+	position: absolute;
+  	width: 812px;
+  	height: 260px;
+  	left: 2%;
+  	top: 50%; 	
+}
+
+#alterar{
+	position: absolute;
+	width: 110px;
+	left: 24%;
+	top: 25%
+}
+
+#excluir{
+	position: absolute;
+	width: 110px;
+	left: 24%;
+	top: 30%
+}
+
+#adicionar{
+	position: absolute;
+	width: 110px;
+	left: 24%;
+	top: 35%
+}
+
+/*FORM ASSOCIACAO*/
+
+/*Botões*/
+#btt-front{
+	position: absolute;
+	left: 26%;
+	top: 40%;
+	width: 90px;
+}
+
+#btt-back{
+	position: absolute;
+	left: 26%;
+	top: 52%;
+	width: 90px;
+}
+
+#form-pesquisar-1{
+	position: absolute;
+	left: 26%;
+	top: 85%;
+}
+
+#form-pesquisar-2{
+	position: absolute;
+	left: 88%;
+	top: 85%;
+}
+
+/*Textfields*/
+#text-1{
+	position: absolute;
+	left: 2%;
+	top: 86%;
+	width: 178px;
+}
+
+#text-2{
+	position: absolute;
+	left: 68%;
+	top: 86%;
+	width: 145px;	
+}
+
+table{
+	position: absolute;
+	left: 2%;
+	top: 15%;
+	height: 220px;
+}
