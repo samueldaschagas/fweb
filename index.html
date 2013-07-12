@@ -12,6 +12,7 @@
    <link rel="stylesheet" type="text/css" href="css/estilo_palavra.css" />
    <link rel="stylesheet" type="text/css" href="css/estilo_categoria.css" />
    <link rel="stylesheet" type="text/css" href="css/estilo_gramatica_manual.css" />
+   <link rel="stylesheet" type="text/css" href="css/estilo_regra_traducao.css" />
 
    <!-- JAVASCRIPT LIBRARIES -->
    <script src="lib/jquery-1.10.1.js"></script>
@@ -40,6 +41,7 @@
                   <li><a href="#tabs-1" href='#'>Vocabulário</a></li>
                   <li><a href="#tabs-2" href='#'>Categoria</a></li>
                   <li><a href="#tabs-4" href='#'>Gramática Manual</a></li>
+                  <li><a href="#tabs-5" href='#'>Regras de tradução</a></li>
                 </ul>
 
                 <!-- TAB VOCABULARIO -->
@@ -222,6 +224,137 @@
                   <input type="button" id='btt-add-regra-gramatica' value="Adicionar Regra" title='btt-back' />
 
                 </div>
+
+
+                 <!-- TAB REGRAS TRADUÇÃO -->
+
+                <div id="tabs-5">
+                  <label id='lbl-regras-traducao-cadastrada'>Regras Cadastradas: </label>
+                  <select id="lista-regras-traducao-cadastrada" size=TAMANHO multiple title='lista-regras' >
+                    <option>ITEM 1 DA LISTA</option>
+                    <option>ITEM 2 DA LISTA</option>
+                    <option>ITEM 3 DA LISTA</option>
+                    <option>ITEM 4 DA LISTA</option>
+                    <option>ITEM 5 DA LISTA</option>
+                    <option>ITEM n DA LISTA</option>
+                  </select>
+
+                  <label id='lbl-filtro-regra-traducao'>Filtro: </label>
+                  <input id="filtro-regra-traducao" title='regra-cadastrada' font/>
+                  
+                  <form id='form-filtro-regra-traducao-cadastrada'>
+                    <input type="radio" name="filtro-regra" value="nome" >Nome &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="filtro-regra" value="frase exemplo">Frase Exemplo 
+                  </form> 
+
+                  <input type="button" id='nova-regra-traducao' value="Nova Regra" title='nova-regra'/>
+                  <input type="button" id='excluir-regra-traducao' value="Excluir Regra" title='excluir-regra'/>
+
+                  <label id='lbl-nome-regra-traducao'>Nome da Regra: </label>
+                  <input id="nome-regra-traducao" title='frase-exemplo' font/>
+                  
+                  <form id='form-nome-regra-traducao'>
+                    <input type="radio" name="filtro-regra" value="regra_geral" >Regra Geral &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="filtro-regra" value="excecao">Exceção 
+                  </form>
+
+                   <form>
+                    <fieldset id='tipos-frase-regra-traducao' title='tipos-frase'>
+                      <legend>Tipo de frase onde a regra se aplica:</legend> 
+                      
+                      <input type="checkbox" name="tipo-frase-regra-traducao" value="Afirmativa"/> Afirmativa
+                      <input id='checkbox-tipo-frase' type="checkbox" name="tipo-frase" value="Interrogativa"/> Interrogativa 
+                      <input id='checkbox-tipo-frase' type="checkbox" name="tipo-frase" value="Exclamativa"/> Exclamativa
+                    </fieldset>
+                  </form>
+
+                  <form>
+                    <fieldset id ='dados-condicao'>
+                      <legend>Dados da Condição</legend>
+                       
+                      <label id='lbl-frase-regra-traducao'>Frase Exemplo: </label>
+                      <input id="frase-exemplo-regra-traducao" title='frase-exemplo' font/>
+                      <input type="button" id='btt-analisar-frase-regra-traducao' value="Analisar Frase" title='btt-analisar-frase' />
+
+                      <select id="lista-caract-palavra-regra-traducao" size=TAMANHO multiple title='lista-regras' >
+                        <option>ITEM 1 DA LISTA</option>
+                        <option>ITEM 2 DA LISTA</option>
+                        <option>ITEM 3 DA LISTA</option>
+                        <option>ITEM 4 DA LISTA</option>
+                        <option>ITEM 5 DA LISTA</option>
+                        <option>ITEM n DA LISTA</option>
+                      </select> 
+
+                      <form>
+                        <fieldset id='caract-frase-regra-traducao'>
+                          <legend>Características de cada palavra da frase:</legend>
+                          
+                          <input id='checkbox-caract-palavra'type="checkbox" name="tipo-frase-regra-traducao" value="Classificacao_gramatical"/> Classificação Gramatical(...)<br>
+                          <input id='checkbox-caract-palavra' type="checkbox" name="tipo-frase" value="tempo"/> Tempo(...)<br> 
+                          <input id='checkbox-caract-palavra' type="checkbox" name="tipo-frase" value="numero"/> Número(...)<br>
+                          <input id='checkbox-caract-palavra' type="checkbox" name="tipo-frase" value="genero"/> Gênero(...)<br>
+                          <input id='checkbox-caract-palavra' type="checkbox" name="tipo-frase" value="significado"/> Significado(...)<br>  
+                          <input id='checkbox-caract-palavra' type="checkbox" name="tipo-frase" value="pessoal"/> Pessoal(...)<br> 
+                          <input id='checkbox-caract-palavra' type="checkbox" name="tipo-frase" value="radical"/> Radical(...)<br> 
+                        </fieldset>
+                      </form>
+
+                    </fieldset>
+                  </form>
+
+                  <form>
+                    <fieldset id='detalhe-regra-traducao'>
+                      <legend>Detalhes da Tradução:</legend>
+
+                      <input type="radio" name="filtro-regra" value="palavra_frase" > Palavra da Frase:
+
+                      <select id="lista-palavra-frase-regra-traducao" size=TAMANHO multiple title='lista-regras' >
+                        <option>ITEM 1 DA LISTA</option>
+                        <option>ITEM 2 DA LISTA</option>
+                        <option>ITEM 3 DA LISTA</option>
+                        <option>ITEM 4 DA LISTA</option>
+                        <option>ITEM 5 DA LISTA</option>
+                        <option>ITEM n DA LISTA</option>
+                      </select>   
+                    
+                      <input id='radio-signf-cadastrado' type="radio" name="filtro-regra" value="significado_cadastrado" > Significados Cadastrados:
+
+                      <select id="lista-signf-cadastrado-regra-traducao" size=TAMANHO multiple title='lista-significados' >
+                        <option>ITEM 1 DA LISTA</option>
+                        <option>ITEM 2 DA LISTA</option>
+                        <option>ITEM 3 DA LISTA</option>
+                        <option>ITEM 4 DA LISTA</option>
+                        <option>ITEM 5 DA LISTA</option>
+                        <option>ITEM n DA LISTA</option>
+                      </select>  
+
+                      <label id='lbl-filtro-significado-regra-traducao'>Filtro: </label>
+                      <input id='filtro-significado-regra-traducao' title='significado-cadastrado' font/>
+
+                      <input type="button" id='btt-front-regra-traducao' value="--->" title='btt-front' />
+                      <input type="button" id='btt-back-regra-traducao' value="<---" title='btt-back' />
+
+                      <label id='lbl-traducao-regra-traducao'> Tradução </label>
+                      <select id="lista-traducao-regra-traducao" size=TAMANHO multiple title='lista-traducao' >
+                        <option>ITEM 1 DA LISTA</option>
+                        <option>ITEM 2 DA LISTA</option>
+                        <option>ITEM 3 DA LISTA</option>
+                        <option>ITEM 4 DA LISTA</option>
+                        <option>ITEM 5 DA LISTA</option>
+                        <option>ITEM n DA LISTA</option>
+                      </select>  
+
+                      <input type="button" id='btt-cima-regra-traducao' value="Para Cima" title='btt-cima-regra-traducao' />
+                      <input type="button" id='btt-baixo-regra-traducao' value="Para Baixo" title='btt-baixo-regra-traducao' />
+
+                      <label id='lbl-obs-regra-traducao'> *itens variáveis de acordo com a frase</label>
+                    </fieldset>
+                  </form> 
+
+                  <input type="button" id='btt-limpar-campo-regra-traducao' value="Limpar Campos" title='btt-front' />
+                  <input type="button" id='btt-add-regra-traducao' value="Adicionar Regra" title='btt-back' />
+                </div>
+
 
           </div>
     </div>

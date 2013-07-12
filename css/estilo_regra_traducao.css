@@ -1,0 +1,238 @@
+@charset "utf-8";
+/*Regras de Tradução*/
+
+
+#lbl-regras-traducao-cadastrada{
+	left: 2%;
+	position:absolute;
+	top:8%;
+}
+
+#lista-regras-traducao-cadastrada{
+	left: 2%;
+	height: 39%;
+	position: absolute;
+	top: 11%; 
+	width: 30%;
+}
+
+#lbl-filtro-regra-traducao{
+	left: 2%;
+	position: absolute;
+	top: 51.5%;
+}
+
+#filtro-regra-traducao{
+	left: 6%;
+	position: absolute;
+	top: 51%;
+}
+
+#form-filtro-regra-traducao-cadastrada{
+	left: 25%;
+	position: absolute;
+	top: 51.5%;
+}
+
+
+#nova-regra-traducao{
+	left: 32.5%;
+	height: 6%;
+	position: absolute;
+	top: 23%;	
+	width: 11%;
+
+}
+
+#excluir-regra-traducao{
+	left: 32.5%;
+	height: 6%;
+	position: absolute;
+	top: 30%;
+	width: 11%;
+}
+
+#lbl-nome-regra-traducao{
+	left: 44%;
+	position: absolute;
+	top: 7.5%;
+}
+
+#nome-regra-traducao{
+	left: 55%;
+	position: absolute;
+	top: 7%;
+}
+
+#form-nome-regra-traducao{
+	left: 74%;
+	position: absolute;
+	top: 7.5%;
+}
+
+#tipos-frase-regra-traducao{
+  	left: 44%;
+  	height: 4%;
+  	padding: 3px; /*Espaçamento entre os campos e a borda*/
+ 	position: absolute;
+  	top:11%;
+  	width: 45%;
+}
+
+#checkbox-tipo-frase-regra-traducao{
+	margin-left: 70px;
+}
+
+#dados-condicao{
+	left: 44%;
+	top: 17%;
+	height: 33.5%;
+	padding: 10px;
+	position: absolute;
+	width: 50%;
+}
+
+#lbl-frase-regra-traducao{
+	left: 4%;
+	position: absolute;
+	top: 7%;
+}
+
+#frase-exemplo-regra-traducao{
+	left: 24%;
+	position: absolute;
+	top: 6.5%;
+	width: 45%;
+}
+
+#btt-analisar-frase-regra-traducao{
+	left: 72%;
+	position: absolute;
+	top: 4.5%;
+
+}
+
+#caract-frase-regra-traducao{
+	left: 50%;
+	height: 70%;
+	position: absolute;
+	top: 17%;
+	width: 40%;
+}
+
+#lista-caract-palavra-regra-traducao{
+	left: 4%;
+	position: absolute;
+	top: 16%;
+	width: 45%;
+}
+
+#checkbox-caract-palavra{
+	top: 1%;
+	position: relative;
+}
+
+#detalhe-regra-traducao{
+	left: 2%;
+	position: absolute;
+	top: 55%; 
+	width: 92%;
+}
+
+#btt-limpar-campo-regra-traducao{
+	left: 2%;
+	height: 5%;
+	position:absolute;
+	top: 94%;
+	width: 14%;
+}
+
+#btt-add-regra-traducao{
+	left: 17%;
+	height: 5%;
+	position:absolute;
+	top: 94%;
+	width: 14%;
+}
+
+#lista-palavra-frase-regra-traducao{
+	left: 1%;
+	position: absolute;
+	top:15%;
+	width: 25%;
+}
+
+#radio-signf-cadastrado{
+	margin-left: 13%;
+}
+
+#lista-signf-cadastrado-regra-traducao{
+	left: 27%;
+	height: 65%;
+	position: absolute;
+	top:15%;
+	width: 25%;
+}
+
+#lbl-filtro-significado-regra-traducao{
+	left: 27%;
+	position: absolute;
+	top: 82%;
+}
+
+#filtro-significado-regra-traducao{
+	left: 31%;
+	position: absolute;
+	top: 81%;
+}
+
+#btt-front-regra-traducao{
+	left: 52.6%;
+	height: 12%;
+	position: absolute;
+	top: 38%;
+	width: 10%;
+}
+
+#btt-back-regra-traducao{
+	left: 52.6%;
+	height: 12%;
+	position: absolute;
+	top: 52%;
+	width: 10%;
+}
+
+#lista-traducao-regra-traducao{
+	left: 63.5%;
+	position: absolute;
+	top: 14%;
+	width: 25%;
+}
+
+#lbl-traducao-regra-traducao{
+	left: 70.5%;
+	position: absolute;
+	top:9%;
+}
+
+#btt-cima-regra-traducao{
+	left: 89%;
+	height: 12%;
+	position: absolute;
+	top: 39%;
+	width: 10%;
+}
+
+#btt-baixo-regra-traducao{
+	left: 89%;
+	height: 12%;
+	position: absolute;
+	top: 53%;
+	width: 10%;
+}
+
+#lbl-obs-regra-traducao{
+	left: 63%;
+	position: absolute;
+	top: 90%;
+}
