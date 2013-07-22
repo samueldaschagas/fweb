@@ -1,7 +1,6 @@
 @charset "utf-8";
 /*Regras de Tradução*/
 
-
 #lbl-regras-traducao-cadastrada{
 	left: 2%;
 	position:absolute;
@@ -13,7 +12,7 @@
 	height: 39%;
 	position: absolute;
 	top: 11%; 
-	width: 30%;
+	width: 25%;
 }
 
 #lbl-filtro-regra-traducao{
@@ -34,22 +33,21 @@
 	top: 51.5%;
 }
 
-
 #nova-regra-traducao{
-	left: 32.5%;
-	height: 6%;
+	left: 29%;
+	height: 4%;
 	position: absolute;
-	top: 23%;	
-	width: 11%;
-
+	top: 25%;	
+	width: 12%;
+	text-align: center;
 }
 
 #excluir-regra-traducao{
-	left: 32.5%;
-	height: 6%;
+	left: 29%;
+	height: 4%;
 	position: absolute;
 	top: 30%;
-	width: 11%;
+	width: 12%;
 }
 
 #lbl-nome-regra-traducao{
@@ -59,13 +57,13 @@
 }
 
 #nome-regra-traducao{
-	left: 55%;
+	left: 56.3%;
 	position: absolute;
 	top: 7%;
 }
 
 #form-nome-regra-traducao{
-	left: 74%;
+	left: 76%;
 	position: absolute;
 	top: 7.5%;
 }
@@ -76,17 +74,13 @@
   	padding: 3px; /*Espaçamento entre os campos e a borda*/
  	position: absolute;
   	top:11%;
-  	width: 45%;
-}
-
-#checkbox-tipo-frase-regra-traducao{
-	margin-left: 70px;
+  	width: 50%;
 }
 
 #dados-condicao{
 	left: 44%;
 	top: 17%;
-	height: 33.5%;
+	height: 30%;
 	padding: 10px;
 	position: absolute;
 	width: 50%;
@@ -99,10 +93,10 @@
 }
 
 #frase-exemplo-regra-traducao{
-	left: 24%;
+	left: 27%;
 	position: absolute;
 	top: 6.5%;
-	width: 45%;
+	width: 42%;
 }
 
 #btt-analisar-frase-regra-traducao{
@@ -114,17 +108,18 @@
 
 #caract-frase-regra-traducao{
 	left: 50%;
-	height: 70%;
 	position: absolute;
 	top: 17%;
 	width: 40%;
+	height: 65%;
 }
 
 #lista-caract-palavra-regra-traducao{
-	left: 4%;
+	left: 3%;
 	position: absolute;
-	top: 16%;
+	top: 20%;
 	width: 45%;
+	height: 72%;
 }
 
 #checkbox-caract-palavra{
